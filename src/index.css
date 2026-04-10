@@ -1,0 +1,762 @@
+.adogen {
+background: linear-gradient(
+    to bottom, 
+    #735622 0%,   /* Top shadow */
+    #D4AF37 25%,  /* Muted highlight (much darker than before) */
+    #8C6E2D 45%,  /* Mid-tone definition */
+    #9D7A31 70%,  /* Base gold */
+    #5D401C 100%  /* Bottom deep shadow */
+  );
+  
+  /* Apply to text */
+  /* -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent; */
+  
+  /* Retain styling and enhance depth with a stronger shadow */
+  font-weight: bold;
+  filter: drop-shadow(2px 2px 6px rgba(0,0,0,0.7));
+}
+
+
+.katon{
+border-radius:12px;
+ 
+  /* Intense "Black Hole" Neon Effect */
+  /* Format: h-offset v-offset blur spread color */
+  box-shadow: 
+    0px 0px 10px 2px rgba(0, 0, 0, 1),             /* Inner Core */
+    0px 0px 10px 5px rgba(30, 30, 30, 0.9),        /* Solid middle glow */
+    0px 10px 50px 10px rgba(0, 0, 0, 0.7);          /* Wide outer bloom */
+    
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.emo {
+  width: 100%; /* Image takes full width of the wrapper */
+  display: block;
+}
+
+/* 1. The Container */
+.emo-wrapper {
+  position: relative;
+  width: 5%; /* Matches your original .emo width */
+  cursor: pointer;
+}
+
+/* 2. The Arrow - Hidden by default */
+.hand-arrow {
+  position: absolute;
+  left: -40px; /* Start slightly to the left */
+  top: 50%;
+  opacity: 0;
+  transform: translateY(0);
+  transition: all 0.5s ease; /* Smooth movement */
+  pointer-events: none;
+}
+
+/* 3. The Paper Note - Hidden by default */
+.paper-note {
+  position: absolute;
+  left: -160px; /* Positioned where the arrow points */
+  top: -40px;
+  background-color: #fffef0; /* Off-white paper color */
+  color: #333;
+  padding: 8px 15px;
+  font-size: 14px;
+  font-family: 'Comic Sans MS', cursive, sans-serif; /* Optional: adds to handwritten feel */
+  box-shadow: 2px 4px 10px rgba(0,0,0,0.2);
+  transform: rotate(-5deg); /* Slight paper tilt */
+  opacity: 0;
+  white-space: nowrap;
+  transition: opacity 0.5s ease 0.4s; /* 0.4s delay so it appears after the arrow */
+}
+
+/* --- Hover Effects --- */
+
+.emo-wrapper:hover .hand-arrow {
+  opacity: 1;
+  transform: translateY(-25px); /* Moves up a little */
+  left: -50px; /* Slides in further to the left */
+}
+
+.emo-wrapper:hover .paper-note {
+  opacity: 1;
+  
+}
+
+
+
+.icon{
+
+  border: 2px solid white;
+
+  width:40px;
+
+  height: 40px;
+
+border-radius: 50%;
+
+}
+
+/* .super{
+
+background-color: #c9963e;
+
+
+
+} */
+
+.ken{
+  position: relative;
+}
+
+.toky{
+  position: absolute;
+  
+  background-color: white;
+  top: 0;
+ width: 100%;
+ height: 100%;
+ opacity: 1;
+ transition:all .5s ;
+}
+
+.rao:hover .toky{
+  opacity: 0;
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:700');
+
+ body {
+  margin: 0;
+ 
+  text-align: center;
+
+}
+
+#container {
+  color: #999;
+  text-transform: uppercase;
+  font-size: 36px;
+  font-weight: bold;
+  padding-top: 200px;
+  width: 100%;
+}
+
+#flip {
+  height: 50px;
+  overflow: hidden;
+  display: inline-block; /* Essential to keep text on one line */
+  vertical-align: middle;
+}
+
+#flip > div > div {
+  color: #fff;
+  padding: 4px 12px;
+  height: 50px;
+  margin-bottom: 45px;
+  display: inline-block;
+}
+
+
+
+/* The Animation Target */
+#flip div:first-child {
+  animation: show 6s linear infinite;
+}
+
+/* Colors */
+#flip div div { background: #42c58a; } /* Everything (Green) */
+#flip div:first-child div { background: #4ec7f3; } /* Work (Blue) */
+#flip div:nth-child(2) div { background: #DC143C; } /* Lifestyle (Red) */
+
+@keyframes show {
+  0% { margin-top: -180px; }    /* Start at the bottom (Everything) */
+  5% { margin-top: -180px; }
+  33% { margin-top: -180px; }
+  
+  38% { margin-top: -90px; }    /* Slide to middle (Lifestyle) */
+  66% { margin-top: -90px; }
+  
+  71% { margin-top: 0px; }      /* Slide to top (Work) */
+  99.99% { margin-top: 0px; }
+  100% { margin-top: -180px; }  /* Reset */
+}
+
+
+
+
+
+
+.rambo{
+ position: absolute;
+ top: 0;
+ width: 100%;
+ height: 100%;
+ overflow: hidden;
+}
+section{
+height:100%;
+width:100%;
+  position:absolute ;  background:radial-gradient(#333,#000);
+}
+.leaf{
+    position:absolute ;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+}
+.leaf div{
+position:absolute ;
+display:block ;
+}
+.leaf div:nth-child(1){
+    left:20%; 
+    animation:fall 15s linear infinite ;
+    animation-delay:-2s;
+
+}
+.leaf div:nth-child(2){
+    left:70%; 
+    animation:fall 15s linear infinite ;
+    animation-delay:-4s;
+}
+.leaf div:nth-child(3){
+    left:10%; 
+    animation:fall 20s linear infinite ;
+    animation-delay:-7s;
+    
+}
+.leaf div:nth-child(4){
+    left:50%; 
+   animation:fall 18s linear infinite ; 
+   animation-delay:-5s;
+}
+.leaf div:nth-child(5){
+    left:85%; 
+    animation:fall 14s linear infinite ;
+    animation-delay:-5s;
+}
+.leaf div:nth-child(6){
+    left:15%; 
+    animation:fall 16s linear infinite ;
+    animation-delay:-10s;
+}
+.leaf div:nth-child(7){
+    left:90%; 
+    animation:fall 15s linear infinite ;
+    animation-delay:-4s;
+}
+
+@keyframes fall{
+    0%{
+        opacity:1;
+        top:-10%;
+        transform:translateX (20px) rotate(0deg);
+    }
+    20%{
+        opacity:0.8;
+        transform:translateX (-20px) rotate(45deg);
+    }
+    40%{
+
+        transform:translateX (-20px) rotate(90deg);
+    }
+    60%{
+        
+       transform:translateX (-20px) rotate(135deg); 
+    }
+    80%{
+    
+        transform:translateX (-20px) rotate(180deg);
+    }
+    100%{
+        
+        top:110%;
+        transform:translateX (-20px) rotate(225deg);
+    }
+    }
+.leaf1{
+    transform: rotateX(180deg);
+}
+h2{
+    position:absolute ;
+    top:30%;
+    width:100%;
+    font-family: 'Courgette', cursive;
+    font-size:2em;
+    text-align:center;
+    transform:translate ;
+    color:#fff;
+    transform:translateY (-50%);
+}
+
+
+
+/* Base Setup */
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* body {
+  background: black;
+  overflow: hidden;
+} */
+
+.wrap {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background-color: #000;
+}
+
+/* Raindrop Column */
+.c {
+  position: absolute; /* Changed to absolute for easier positioning */
+  height: 400px;
+  width: 0.69444%; /* 100% / 144 */
+  top: -400px; /* Equivalent to margin-top: -400px */
+  
+  /* Positioning and Color logic */
+  left: calc((var(--i) - 1) * 0.69444%);
+  background-image: linear-gradient(
+    to bottom, 
+    black, 
+    hsla(calc(var(--i) * (300 / 144)), 100%, 50%, 0.8)
+  );
+  
+  /* Animation */
+  animation: drop 4s infinite ease-in;
+  /* Simulating the random delay from SCSS */
+  animation-delay: calc(var(--rng) * -4s);
+}
+
+/* The Glowing Dot at the bottom */
+.c::after {
+  content: "";
+  position: absolute;
+  width: 0.9vw;
+  height: 0.9vw;
+  border-radius: 50%;
+  left: 50%;
+  bottom: -0.45vw; /* Half of dotSize */
+  margin-left: -0.45vw;
+  background: hsla(calc(var(--i) * (300 / 144)), 100%, 50%, 1);
+}
+
+/* Animation Keyframes */
+@keyframes drop {
+  80% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate3d(0, 150vh, 0);
+    opacity: 0;
+  }
+}
+
+
+
+
+
+
+
+
+
+.background {
+  width: 100%;
+  height: 100%;
+  background: #3E1E68;
+  overflow: hidden;
+  position: absolute;
+}
+
+.background span {
+  width: 20vmin;
+  height:20vmin;
+  border-radius: 20vmin;
+  backface-visibility: hidden;
+  position: absolute;
+  animation-name: move;
+  animation-duration: 6s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+
+}
+
+/* Individual Particle Logic (Generated from SCSS Loop) */
+.background span:nth-child(1) {
+  color: #E45A84;
+  top: 42%;
+  left: 12%;
+  animation-duration: 13.2s;
+  animation-delay: -5.4s;
+  transform-origin: 12vw -10vh;
+  box-shadow: 40vmin 0 12.4vmin currentColor;
+}
+
+.background span:nth-child(2) {
+  color: #583C87;
+  top: 85%;
+  left: 67%;
+  animation-duration: 15.8s;
+  animation-delay: -1.2s;
+  transform-origin: -5vw 18vh;
+  box-shadow: -40vmin 0 15.1vmin currentColor;
+}
+
+.background span:nth-child(3) {
+  color: #FFACAC;
+  top: 15%;
+  left: 44%;
+  animation-duration: 11.4s;
+  animation-delay: -8.9s;
+  transform-origin: 22vw -3vh;
+  box-shadow: 40vmin 0 8.7vmin currentColor;
+}
+
+/* ... Repeat this pattern for children 4 through 20 ... */
+/* For brevity, I've condensed the remaining unique children below */
+
+.background span:nth-child(4) { color: #E45A84; top: 92%; left: 33%; animation-duration: 14s; animation-delay: -10s; transform-origin: 5vw 5vh; box-shadow: 40vmin 0 10vmin currentColor; }
+.background span:nth-child(5) { color: #583C87; top: 10%; left: 80%; animation-duration: 12s; animation-delay: -2s; transform-origin: -10vw 15vh; box-shadow: -40vmin 0 18vmin currentColor; }
+.background span:nth-child(6) { color: #FFACAC; top: 55%; left: 20%; animation-duration: 15s; animation-delay: -4s; transform-origin: 15vw -12vh; box-shadow: 40vmin 0 14vmin currentColor; }
+.background span:nth-child(7) { color: #E45A84; top: 30%; left: 50%; animation-duration: 11s; animation-delay: -15s; transform-origin: -20vw 2vh; box-shadow: -40vmin 0 11vmin currentColor; }
+.background span:nth-child(8) { color: #583C87; top: 75%; left: 10%; animation-duration: 16s; animation-delay: -7s; transform-origin: 8vw 20vh; box-shadow: 40vmin 0 9vmin currentColor; }
+.background span:nth-child(9) { color: #FFACAC; top: 40%; left: 90%; animation-duration: 13s; animation-delay: -3s; transform-origin: -5vw -5vh; box-shadow: -40vmin 0 13vmin currentColor; }
+.background span:nth-child(10) { color: #E45A84; top: 60%; left: 5%; animation-duration: 14.5s; animation-delay: -12s; transform-origin: 10vw 10vh; box-shadow: 40vmin 0 16vmin currentColor; }
+.background span:nth-child(11) { color: #583C87; top: 25%; left: 60%; animation-duration: 12.5s; animation-delay: -6s; transform-origin: -15vw -18vh; box-shadow: -40vmin 0 12vmin currentColor; }
+.background span:nth-child(12) { color: #FFACAC; top: 80%; left: 40%; animation-duration: 15.5s; animation-delay: -9s; transform-origin: 18vw 4vh; box-shadow: 40vmin 0 10vmin currentColor; }
+.background span:nth-child(13) { color: #E45A84; top: 5%; left: 15%; animation-duration: 10.8s; animation-delay: -1s; transform-origin: -12vw 12vh; box-shadow: -40vmin 0 15vmin currentColor; }
+.background span:nth-child(14) { color: #583C87; top: 50%; left: 85%; animation-duration: 14.2s; animation-delay: -14s; transform-origin: 3vw -20vh; box-shadow: 40vmin 0 11vmin currentColor; }
+.background span:nth-child(15) { color: #FFACAC; top: 70%; left: 25%; animation-duration: 11.9s; animation-delay: -5s; transform-origin: -8vw 8vh; box-shadow: -40vmin 0 17vmin currentColor; }
+.background span:nth-child(16) { color: #E45A84; top: 20%; left: 75%; animation-duration: 13.7s; animation-delay: -11s; transform-origin: 20vw -6vh; box-shadow: 40vmin 0 13vmin currentColor; }
+.background span:nth-child(17) { color: #583C87; top: 95%; left: 55%; animation-duration: 15.1s; animation-delay: -8s; transform-origin: -4vw 14vh; box-shadow: -40vmin 0 12vmin currentColor; }
+.background span:nth-child(18) { color: #FFACAC; top: 35%; left: 35%; animation-duration: 12.3s; animation-delay: -2.5s; transform-origin: 14vw -15vh; box-shadow: 40vmin 0 10vmin currentColor; }
+.background span:nth-child(19) { color: #E45A84; top: 45%; left: 95%; animation-duration: 14.8s; animation-delay: -13s; transform-origin: -18vw 5vh; box-shadow: -40vmin 0 14vmin currentColor; }
+.background span:nth-child(20) { color: #583C87; top: 12%; left: 45%; animation-duration: 11.2s; animation-delay: -4.5s; transform-origin: 6vw -10vh; box-shadow: 40vmin 0 16vmin currentColor; }
+
+@keyframes move {
+  100% {
+    transform: translate3d(0, 0, 1px) rotate(360deg);
+  }
+}
+
+
+
+.yassin{
+  /* This creates the radial glow effect seen in the photo */
+  background: radial-gradient(circle, #061526 0%, #02060A 100%);
+  
+  /* Adds the thin golden border seen in the image */
+  /* border: 1px solid #5D401C; */
+  
+  /* Optional: Adds a very slight inner shadow for depth */
+  box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.8);
+  
+
+}
+
+
+.maloka{
+    font-family: "Paprika", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.hyper{
+
+ font-family: "Paprika", system-ui;
+  font-weight: 400;
+  font-style: normal;
+
+}
+
+
+
+.wooo{
+/* Ensure the image doesn't have default margins interfering */
+  display: block;
+  border-radius: 12px;
+  
+  /* Intense "Black Hole" Neon Effect */
+  /* Format: h-offset v-offset blur spread color */
+  box-shadow: 
+    0 0 10px 2px rgba(0, 0, 0, 1),             /* Inner Core */
+    0 0 25px 5px rgba(30, 30, 30, 0.9),        /* Solid middle glow */
+    0 0 50px 10px rgba(0, 0, 0, 0.7);          /* Wide outer bloom */
+    
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.wooo:hover {
+  /* Scaled up for more impact */
+  transform: scale(1.03); 
+  
+  /* Violent Neon Black/Dark Grey Glow */
+  box-shadow: 
+    0 0 15px 5px rgba(0, 0, 0, 1),             /* Tighten the center */
+    0 0 40px 10px rgba(60, 60, 60, 0.8),       /* Brighten the "neon" edge */
+    0 0 80px 20px rgba(0, 0, 0, 1);            /* Massive depth */
+    
+  cursor:pointer;
+
+  /* Adjust the border-radius if your image is rounded */
+  /* border-radius: 8px;  */
+  
+  /* The Neon Black Glow Effect */
+  box-shadow: 
+    0 0 5px rgba(0, 0, 0, 0.8),        /* Core shadow */
+    0 0 15px rgba(20, 20, 20, 0.6),    /* Inner glow */
+    0 0 30px rgba(40, 40, 40, 0.4),    /* Mid glow */
+    0 0 50px rgba(0, 0, 0, 0.9);       /* Outer atmospheric spread */
+    
+  /* Optional: adds a slight dark border to define the shape */
+  /* border: 1px solid rgba(255, 255, 255, 0.05); */
+  
+  transition: box-shadow 0.3s ease-in-out;
+  transition: all 1s;
+}
+
+.wolf{
+  /* This creates the radial glow effect seen in the photo */
+  background: radial-gradient(circle, #061526 0%, #02060A 100%);
+  
+  /* Adds the thin golden border seen in the image */
+  /* border: 1px solid #5D401C; */
+  
+  /* Optional: Adds a very slight inner shadow for depth */
+  box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.8);
+
+}
+ .lovly{
+  width: 20%;
+ }
+
+ .dear{
+  width: 30%;
+ }
+
+
+.bbbv{
+  width:6%;
+  transition: transform 0.3s ease; /* Makes the movement smooth */
+  cursor: pointer;
+  display: block;
+}
+.aqw{
+ width: 10%;
+ transition: transform 0.3s ease; /* Makes the movement smooth */
+  cursor: pointer;
+  display: block;
+  position: relative;
+  right: -10px;
+}
+
+.bnm{
+  /* left:60%;
+  position: absolute; */
+  width: 6%;
+}
+
+.baki{
+  position: relative;
+  gap: 15px;
+}
+
+.aqw:hover, .bbbv:hover {
+  /* translateY(-20px) moves it up, scale(1.05) makes it slightly bigger */
+  transform: translateY(-15px) scale(1.05);}
+
+
+  .sharyoken{
+
+  background: linear-gradient(
+
+    to bottom, 
+
+    #735622 0%,   /* Top shadow */
+
+    #D4AF37 25%,  /* Muted highlight (much darker than before) */
+
+    #8C6E2D 45%,  /* Mid-tone definition */
+
+    #9D7A31 70%,  /* Base gold */
+
+    #5D401C 100%  /* Bottom deep shadow */
+
+  );
+
+  
+
+  /* Apply to text */
+
+  /* -webkit-background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+
+  background-clip: text;
+
+  color: transparent; */
+
+  
+
+  /* Retain styling and enhance depth with a stronger shadow */
+
+  font-weight: bold;
+
+  filter: drop-shadow(2px 2px 6px rgba(0,0,0,0.7));
+
+}
+
+.cinter{
+position: relative;
+
+  overflow: hidden;
+  
+  /* Perspective gives depth to the 3D transforms */
+  perspective: 1000px; 
+
+}
+.go {
+ opacity: 0;
+ 
+  transform: scale(0.9);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+  display: block;
+}
+
+.spazer {
+  cursor: pointer;
+ position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  /* Transform-origin makes it fall from the bottom or center */
+  transform-origin: center; 
+  transition: transform 1.2s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.8s ease;
+ 
+}
+
+.spazer:hover {
+ transform: translateZ(-500px) rotateX(-30deg) translateY(200px);
+  opacity: 0;
+  /* Pointer-events: none ensures that once it starts falling, 
+     you don't "flicker" if the mouse loses contact with the moving target */
+  pointer-events: none;
+}
+
+
+
+
+.spazer:hover ~ .go, 
+.go:hover {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.toto{
+  object-fit: cover;
+}
+
+.calls{
+  width: 12%;
+ 
+
+   display: flex;
+  align-items: center;
+  position: relative;
+  left: -15px;
+  
+  
+}
+
+.samoo{
+   transition: transform 0.3s ease; /* Makes the movement smooth */
+  cursor: pointer;
+}
+
+.samoo:hover{
+  transform: translateY(-15px) scale(1.05);
+}
+
+
+
+.vaipr:hover {
+  animation: ring 0.3s ease-in-out infinite;
+}
+
+/* 2. Define the shaking/ringing movement */
+@keyframes ring {
+  0% { transform: rotate(0); }
+  25% { transform: rotate(10deg); }
+  50% { transform: rotate(0); }
+  75% { transform: rotate(-10deg); }
+  100% { transform: rotate(0); }
+}
+
+/* 3. Add a smooth transition to return to normal when hover ends */
+.vaipr {
+  transition: transform 0.2s ease-in-out;
+  display: inline-block; /* Ensures the rotation works correctly */
+}
+
+.travel {
+  /* This ensures the transition is smooth when the mouse leaves */
+  transition: transform 0.8s ease-in-out;
+  backface-visibility: visible; 
+  display: inline-block;
+}
+
+.travel:hover {
+  /* rotateY spins the image horizontally (right to left) */
+  transform:  rotateY(360deg)  ;
+}
+
+.noti{
+   transition: transform 0.3s ease; /* Makes the movement smooth */
+  cursor: pointer;
+}
+
+.noti:hover{
+   transform: translateY(-15px) scale(1.05);
+}
+
+.cubra{
+  width: 40%;
+  
+  
+}
+.beam{
+  width: 10%;
+  
+}
+
+.thunder{
+  background-image: url(./Assests/Images/cono8.jpg);
+  background-size:cover;
+  background-position: center;
+  min-height: 100%; /* Ensures it fills the flex container */
+
+
+  
+}
+
+@media (max-width: 767.98px) {
+  .thunder {
+    min-height: 300px; /* Adjust this value to your liking */
+    width: 100%;
+  }
+}
