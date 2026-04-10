@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/sparky/static/css/main.b78c61db.css",
+    "main.js": "/sparky/static/js/main.3367c8f6.js",
+    "static/js/453.968c43e4.chunk.js": "/sparky/static/js/453.968c43e4.chunk.js",
+    "static/media/4k2.jpg": "/sparky/static/media/4k2.61acc08ee42d03ce65a7.jpg",
+    "static/media/cssss.png": "/sparky/static/media/cssss.0583a190d2592433346b.png",
+    "static/media/yalla.mp4": "/sparky/static/media/yalla.06a1ee0a9d6bac704ff4.mp4",
+    "static/media/whats.png": "/sparky/static/media/whats.594917486b6dfad3ff8a.png",
+    "static/media/gojo.png": "/sparky/static/media/gojo.ae495f029aecc29cbf17.png",
+    "static/media/httm.png": "/sparky/static/media/httm.4b786e502f9af37a8a3d.png",
+    "static/media/callme.png": "/sparky/static/media/callme.e9a0f5109d9248ae5f08.png",
+    "static/media/rere.png": "/sparky/static/media/rere.65ce65e447f527da1d15.png",
+    "static/media/fs3.png": "/sparky/static/media/fs3.3aa32885c360cf99493c.png",
+    "static/media/emos.png": "/sparky/static/media/emos.36549cd2594b1c63d62f.png",
+    "static/media/gohan.jpg": "/sparky/static/media/gohan.0a6e8bce665eacb5d2b8.jpg",
+    "static/media/trans.jpg": "/sparky/static/media/trans.1ca3ccaff2854fac55f4.jpg",
+    "static/media/ins.png": "/sparky/static/media/ins.1b112fd7c7c08910c118.png",
+    "static/media/WhatsApp Image 2026-04-03 at 8.16.53 AM.jpeg": "/sparky/static/media/WhatsApp Image 2026-04-03 at 8.16.53 AM.1b5544d0c91ae01938ee.jpeg",
+    "static/media/hi.png": "/sparky/static/media/hi.05655be1c827d1d3a639.png",
+    "static/media/emo3.png": "/sparky/static/media/emo3.90b5a9afd458177bf8b2.png",
+    "static/media/fa-solid-900.woff2": "/sparky/static/media/fa-solid-900.ce9a3fa740bd60b4ac3b.woff2",
+    "static/media/fa-brands-400.woff2": "/sparky/static/media/fa-brands-400.f276979f97f1cf375d23.woff2",
+    "static/media/meesengerlogo.png": "/sparky/static/media/meesengerlogo.7f96019f7b20b8c3d31d.png",
+    "static/media/jjjjj.png": "/sparky/static/media/jjjjj.649a896f8c09e1c99df5.png",
+    "static/media/me32.jpeg": "/sparky/static/media/me32.50fb02fb71d85c8e78ee.jpeg",
+    "static/media/WhatsApp Image 2026-04-07 at 11.17.59 PM.jpeg": "/sparky/static/media/WhatsApp Image 2026-04-07 at 11.17.59 PM.f177878f029691767c5e.jpeg",
+    "static/media/logo67.jpg": "/sparky/static/media/logo67.6b6d7b94780af890f6eb.jpg",
+    "static/media/cono8.jpg": "/sparky/static/media/cono8.c936cd23521d2316db21.jpg",
+    "static/media/fa-regular-400.woff2": "/sparky/static/media/fa-regular-400.cfbad32c79d9dda6af4a.woff2",
+    "static/media/fa-v4compatibility.woff2": "/sparky/static/media/fa-v4compatibility.296da06936a3373940c8.woff2",
+    "index.html": "/sparky/index.html",
+    "main.b78c61db.css.map": "/sparky/static/css/main.b78c61db.css.map",
+    "main.3367c8f6.js.map": "/sparky/static/js/main.3367c8f6.js.map",
+    "453.968c43e4.chunk.js.map": "/sparky/static/js/453.968c43e4.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b78c61db.css",
+    "static/js/main.3367c8f6.js"
+  ]
+}
