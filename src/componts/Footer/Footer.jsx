@@ -5,6 +5,7 @@ import msss from '../../Assests/Images/meesengerlogo.png'
 import inss from '../../Assests/Images/ins.png'
 import wh from '../../Assests/Images/whats.png'
 
+
 export default function Footer() {
   return (
     <>

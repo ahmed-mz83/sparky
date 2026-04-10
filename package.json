@@ -1,16 +1,11 @@
 {
-  "homepage": "https://ahmed-mz83.github.io/profile",
   
+  "homepage": "https://ahmed-mz83.github.io/oops",
   "name": "abdelzaher",
-  
-  "version": "0.1.0",
-  
-  
+  "version": "0.1.0",   
   "private": true,
-  
   "dependencies": {
-  
-    
+
   "@fortawesome/fontawesome-free": "^7.2.0",
   
     
