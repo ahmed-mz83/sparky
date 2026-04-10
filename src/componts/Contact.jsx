@@ -20,12 +20,12 @@ export default function Contact() {
   <fieldset disabled>
     {/* <legend>Disabled fieldset example</legend> */}
     <div className="mb-3">
-      <label for="disabledTextInput" className="form-label text-white  m-2 maloka">Mobile</label>
-      <input type="text" id="disabledTextInput" className="form-control fw-bolder" placeholder="01227175345"/>
+      <label htmlFor="qa" className="form-label text-white  m-2 maloka">Mobile</label>
+      <input type="text" id="qa" className="form-control fw-bolder" placeholder="01227175345"/>
     </div>
     <div className="mb-3">
-      <label for="disabledSelect" className="form-label text-white maloka ">Email</label>
-            <input type=" email" id="disabledTextInput" className="form-control fw-bolder" placeholder="ahmedmz83@hotmail.com"/>
+      <label htmlFor="sdf" className="form-label text-white maloka ">Email</label>
+            <input type=" email" id="sdf" className="form-control fw-bolder" placeholder="ahmedmz83@hotmail.com"/>
 
     </div>
     <div className="mb-3 d-flex justify-content-center  align-items-center king ">

@@ -65,7 +65,7 @@ let kakashi= <div className="background rounded-5">
 
  <section>
        <h2>
-      Let's make an Awesome<li/> website
+      Let's make an Awesome website
       </h2>
  
      <div className="leaf">
@@ -75,7 +75,7 @@ let kakashi= <div className="background rounded-5">
       <div><img  src="http://www.pngmart.com/files/1/Green-Leaves-PNG-File.png" height="75px" width="75px"></img></div>
        <div> <img src="http://www.pngmart.com/files/1/Transparent-Autumn-Leaves-Falling-PNG.png" height="75px" width="75px"></img></div>
      <div>   <img src="http://www.pngmart.com/files/1/Realistic-Autumn-Fall-Leaves-PNG.png" height="75px" width="75px"/></div>
-     {/* <div><img src="http://cdn.clipart-db.ru/rastr/autumn_leaves_025.png" height="75px" width="75px"/></div> */}
+    
             
      </div>
      
@@ -86,7 +86,7 @@ let kakashi= <div className="background rounded-5">
       <div><img  src="http://www.pngmart.com/files/1/Green-Leaves-PNG-File.png" height="75px" width="75px"></img></div>
        <div> <img src="http://www.pngmart.com/files/1/Transparent-Autumn-Leaves-Falling-PNG.png" height="75px" width="75px"></img></div>
      <div>   <img src="http://www.pngmart.com/files/1/Realistic-Autumn-Fall-Leaves-PNG.png" height="75px" width="75px"/></div>
-     {/* <div><img src="http://cdn.clipart-db.ru/rastr/autumn_leaves_025.png" height="75px" width="75px"/></div> */}
+    
             
      </div>
      
@@ -127,7 +127,7 @@ let kakashi= <div className="background rounded-5">
         <div className=' container mt-5' >
             <div className="row">
 {pic.map((itm)=>(
-<div className="col-md-3 mt-3">
+<div className="col-md-3 mt-3" key={itm.id}>
     <div className=' rao'>
 <div className='ken '>
 
@@ -151,12 +151,12 @@ let kakashi= <div className="background rounded-5">
 ))}
 
 
-{pic.map((itm)=><>
+{pic.map((itm)=>
 
 
 
 
-<div className="modal fade" id={itm.id} tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div className="modal fade" id={itm.id} tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" key={itm.id}>
   <div className="modal-dialog">
     <div className="modal-content">
    
@@ -167,7 +167,7 @@ let kakashi= <div className="background rounded-5">
     </div>
   </div>
 </div>
-</>)}
+)}
             </div>
         </div>
 
