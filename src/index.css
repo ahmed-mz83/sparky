@@ -760,3 +760,37 @@ position: relative;
     width: 100%;
   }
 }
+
+.nameofproject2{
+ font-family: "Paprika", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+}
+
+.projectsection{
+  min-height: 100dvh;
+}
+
+.projectshot1:hover{
+animation: shake 0.5s ease-in-out;
+}
+
+
+
+@keyframes shake {
+  0%   { transform: translateX(0); }
+  20%  { transform: translateX(-8px); }
+  40%  { transform: translateX(8px); }
+  60%  { transform: translateX(-6px); }
+  80%  { transform: translateX(6px); }
+  100% { transform: translateX(0); }
+}
+
+.nameofproject2{
+font-family: "Paprika", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+
+}

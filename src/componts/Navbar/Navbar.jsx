@@ -21,7 +21,7 @@ export default function Navbar() {
          <Link className="nav-link text-white " to={'/about'} >  About</Link>
         </li>
         <li className="nav-item">
-         <Link  className="nav-link text-white " to={'/portfilio'}>For Fun</Link>
+         <Link  className="nav-link text-white " to={'/portfilio'}>My Work</Link>
         </li>
         <li className="nav-item">
          <Link  className="nav-link text-white " to={'/contact'}>Contact</Link>
