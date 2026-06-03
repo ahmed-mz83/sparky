@@ -3,10 +3,19 @@ import me from '../../Assests/Images/WhatsApp Image 2026-04-03 at 8.16.53 AM.jpe
 import emoji from '../../Assests/Images/emo3.png'
 import prince from '../../Assests/Images/WhatsApp Image 2026-04-07 at 11.17.59 PM.jpeg'
 import Footer from '../Footer/Footer'
+import { Helmet } from 'react-helmet-async'
+
 
 export default function Home() {
   return (
     <>
+<Helmet>
+        <meta charSet="utf-8" />
+        <title>Home</title>
+       
+      </Helmet>
+
+
       <header className="adogen ">
         <div className='d-flex justify-content-center align-items-center  '>
           <img src={prince} className=' w-25 rounded-5 wooo mt-4 ' alt="Profile" />

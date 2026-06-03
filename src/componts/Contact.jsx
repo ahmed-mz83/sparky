@@ -3,9 +3,21 @@ import cono from '../Assests/Images/cono8.jpg'
 import wh from '../Assests/Images/whats.png'
 import cals from '../Assests/Images/callme.png'
 import ema from '../Assests/Images/emos.png'
+import { Helmet } from 'react-helmet-async'
+
 export default function Contact() {
   return (
     <>
+
+<Helmet>
+        <meta charSet="utf-8" />
+        <title>Contact</title>
+       
+      </Helmet>
+
+
+
+
      <div className="  min-vh-100 adogen d-flex justify-content-center align-items-center   ">
 
         <div className="row w-75  air g-0  d-flex align-items-stretch  overflow-hidden  rounded-5  ">

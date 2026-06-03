@@ -1,13 +1,24 @@
 import React from 'react'
+import Footer from '../Footer/Footer'
 import screenshot from "../../Assests/Images/shot.png"
 import screenshot2 from "../../Assests/Images/crudsystem.png"
+import { Helmet } from 'react-helmet-async'
+
 
 export default function Port() {
   return (
     <>
+
+<Helmet>
+        <meta charSet="utf-8" />
+        <title>My Work</title>
+       
+      </Helmet>
+
+
       <div className="adogen">
       <div className=' projectsection container  '>
-<div className="row  d-flex flex-column flex-md-row justify-content-center align-items-center  ">
+<div className="row  d-flex flex-column flex-md-row justify-content-center align-items-center   ">
 <div className='  col-8 col-md-4 '>
   <div className='mt-1 mt-md-4'>
     <a href="https://ahmed-mz83.github.io/landing-page-website/" target="_blank" rel="noopener noreferrer" > 
@@ -39,7 +50,7 @@ export default function Port() {
 
       </div>
 
-
+<Footer/>
     </>
   )
 }

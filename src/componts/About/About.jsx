@@ -7,11 +7,17 @@ import reres from '../../Assests/Images/rere.png'
 import jjjs from '../../Assests/Images/jjjjj.png'
 import csssc from '../../Assests/Images/cssss.png'
 import httll from '../../Assests/Images/httm.png'
+import { Helmet } from 'react-helmet-async'
+
 
 export default function About() {
   return (
     <>
-
+<Helmet>
+        <meta charSet="utf-8" />
+        <title>About</title>
+       
+      </Helmet>
 
 <div className=" sharyoken   min-vh-100      " >
 <div className="row">
