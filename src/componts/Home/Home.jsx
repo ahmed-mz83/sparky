@@ -16,13 +16,14 @@ export default function Home() {
       </Helmet>
 
 
-      <header className="adogen ">
-        <div className='d-flex justify-content-center align-items-center  '>
-          <img src={prince} className=' w-25 rounded-5 wooo mt-4 ' alt="Profile" />
+      <header className="adogen   ">
+        <div className="row d-flex justify-content-center align-items-center mx-0 ">
+        <div className='d-flex justify-content-center align-items-center  col-9  col-md-3  '>
+          <img src={prince} className=' w-100 rounded-5 wooo mt-4 ' alt="Profile" />
         </div>
-        
+        </div>
         <div className='d-flex text-white fw-bolder justify-content-center align-items-center'>
-          <p className=' mt-2  maloka'>Ahmed Mohamed Abdelzaher</p>
+          <p className=' mt-3 mt-md-5  maloka'>Ahmed Mohamed Abdelzaher</p>
         </div>
 
         <div className='d-flex justify-content-center align-items-center'>

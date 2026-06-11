@@ -16,7 +16,7 @@ export default function Footer() {
     <div className=' text-white '>
        <h1 className=' mx-3 border-0 border-bottom'  >Location </h1> 
         <p className=' maloka'>Egypt - Cairo - Maadi</p>
-        <p className=' maloka'>Zahraa el maadi</p>
+        
     </div>
 </div>
 <div className="col-md-6 ">

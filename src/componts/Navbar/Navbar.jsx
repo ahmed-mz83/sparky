@@ -6,7 +6,7 @@ export default function Navbar() {
     <>
       <nav className="navbar navbar-expand-lg  yassin ">
   <div className=" container orachimaro ">
-    <Link to="/home" className="navbar-brand w-25">
+    <Link to="/home" className="navbar-brand  w-25">
   <img src={logo} alt="Logo" className=" w-75   tusandy" />
 </Link>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">

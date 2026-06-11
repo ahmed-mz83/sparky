@@ -770,6 +770,7 @@ position: relative;
 
 .projectsection{
   min-height: 100dvh;
+  
 }
 
 .projectshot1:hover{
@@ -794,3 +795,4 @@ font-family: "Paprika", system-ui;
   color: white;
 
 }
+
